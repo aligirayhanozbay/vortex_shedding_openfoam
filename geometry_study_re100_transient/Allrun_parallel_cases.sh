@@ -4,7 +4,7 @@ for dir in */
 do
     if [ $dir != 'base/' ]; then
         echo "Starting run from $dir"
-        ./$dir/Allrun_parallel
+        nohup ./$dir/Allrun_parallel > $dir/sh.log &
     fi
     echo "Completed run from $dir"
 done
