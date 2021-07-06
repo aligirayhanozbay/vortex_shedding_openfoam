@@ -18,4 +18,4 @@ runApplication renumberMesh -dict system/renumberMeshDict  -overwrite -noFunctio
 # Resetting initial
 restore0Dir
 
-pyFoamPlotRunner.py --with-all -–hardcopy $(getApplication) 
+pyFoamPlotRunner.py --with-all --hardcopy $(getApplication) 
